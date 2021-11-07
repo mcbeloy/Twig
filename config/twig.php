@@ -6,5 +6,8 @@ $loader = new Twig\Loader\FilesystemLoader(__DIR__ . '/../src/View');
 $twig = new Twig\Environment($loader, ['debug' => true]);
 $twig->addExtension(new Twig\Extension\DebugExtension());
 
+$contactEmail = 'contactEmail';
+$twig->addGlobal('contactEmail', $contactEmail);
+
 
 
